@@ -1,0 +1,108 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.todo-container{
+    width: 600px;
+    background-color: #f6f6f6;
+    margin: 30px auto 0;
+}
+.todo-container .add-task{
+    border-radius: 6px;
+    padding: 15px;
+    background-color: #009688;
+    position: relative;
+}
+.todo-container .add-task input{
+    border: none;
+    border-radius: 4px;
+    padding: 10px 15px;
+    display: inline-block;
+    background-color: rgba(255, 255, 255, .3);
+    color: #fff;
+    width: calc(100% - 15px);
+    font-size: 20px;
+}
+.todo-container .add-task input:focus{
+    outline: none;
+}
+.todo-container .add-task .plus{
+    font-size: 38px;
+    position: absolute;
+    width: 43px;
+    height: 43px;
+    line-height: 43px;
+    background: #fff;
+    border-radius: 50%;
+    text-align: center;
+    right: 12px;
+    cursor: pointer;
+    color: #009688;
+    transition: transform .3s;
+}
+.todo-container .add-task .plus:hover{
+    transform: rotate(90deg);
+}
+.todo-container .tasks-contant{
+    padding: 15px;
+    border-radius: 6px;
+}
+.todo-container .tasks-contant .no-tasks-masseage{
+    color: #777;
+    font-size: 15px;
+}
+.todo-container .tasks-contant >span{
+    display: block;
+    background-color: #fff;
+    padding: 10px;
+}
+.todo-container .tasks-contant >span:not(:last-child){
+    margin-bottom: 10px;
+}
+.todo-container .tasks-contant .task-box .delete{
+    float: right;
+    padding: 4px 10px;
+    background: #e91e6e;
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.todo-container .tasks-contant .task-box.finished{
+    text-decoration: line-through;
+}
+.task-state{
+    overflow: hidden;
+    width: 600px;
+    margin: 10px auto;
+    font-size: 12px;
+}
+.task-state .task-count{
+    width: 50%;
+    float: left;
+    padding: 10px;
+}
+.task-state .task-combleted{
+    width: 50%;
+    float: right;
+    padding: 10px;
+    text-align: right;
+}
+.task-state .task-count span,
+.task-state .task-combleted span{
+    color: #fff;
+    padding: 1px 5px;
+    font-size: 10px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+.task-state .task-count span{
+    background: #e91e6e;
+}
+.task-state .task-combleted span{
+    background: #03a9f4;
+}
+
